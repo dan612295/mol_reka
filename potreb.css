@@ -1,0 +1,122 @@
+*{
+   margin: 0px;
+   padding: 0px;
+}
+body{
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.menu{
+   position: relative;
+   z-index: 999999999999;
+   /* position: fixed; */
+   list-style: none;
+ /* margin: 16px 0 0px; */
+ padding: 25px 10px 16px;
+ text-align: center;
+ background: white;
+ box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.246);
+}
+ul{
+   list-style: none;
+   padding-left: 0;
+}
+.menu li{
+   display: inline-block;
+   margin-right: -4px;
+}
+.menu li:after{
+   content: "|";
+   color: #606060;
+   display: inline-block;
+   vertical-align:top;
+}
+.menu-main li:last-child:after {
+   content: none;
+}
+.menu a{
+   text-decoration: none;
+   font-family: 'Comfortaa', cursive;
+   letter-spacing: 2px;
+   position: relative;
+   padding-bottom: 20px;
+   margin: 0 34px 0 30px;
+   font-size: 17px;
+   text-transform: uppercase;
+   display: inline-block;
+   transition: color .2s;
+}
+.menu a, .menu a:visited{
+   color: #9d999d;
+}
+.menu a.current, .menu a:hover{
+   color: #e1e1d0;
+}
+.menu a:before, .menu a:after{
+   content: "";
+   position: absolute;
+   height: 4px;
+   top: auto;
+   right: 50%;
+   bottom: -5px;
+   left: 50%;
+   background: #e1e1d0;
+   transition: 0.5s;
+}
+.menu a:hover:before, .menu .current:before {left: 0;}
+.menu a:hover:after, .menu .current:after {right: 0;}   
+.logo{
+   background-color: rgb(30, 15 0.vb00 5, 238);
+}
+.logo img{
+   height: 300px;
+   display: block;
+}
+img{
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.178);
+   /* margin-top: 160px; */
+   width: 100%;
+   display: inline-block;
+}
+/* ul{ */
+   /* max-width: 1000px;
+   width: 957px;
+   background-color: rgb(30, 155, 238);
+   vertical-align: top;
+   display: inline-block;
+} */
+/* .menuRight{
+   margin-right: 5%;
+   float: right;
+}
+li{
+   margin-right: 20px;
+   margin-left: 10px;
+   display: inline-block;
+}
+a{
+   display: inline-block;
+   font-size: 20px;
+   line-height: 50px;
+   text-decoration: none;
+   color: white;
+} */
+.insta{
+   /* padding: 50%; */
+   background-size: cover;
+   background-position: center;
+   background-image: url("фон луг_слит_сжат.jpg");
+   margin: auto;
+   /* max-width: 1000px; */
+   width: 100%;
+   height: 1000px;
+}
+.par{
+   /* background: white; */
+   font-family: 'Ruslan Display', cursive;
+   font-size: 50px;
+   color: #246bae;
+   padding-top: 20%;
+   text-align: center;
+   /* float: left; */
+}

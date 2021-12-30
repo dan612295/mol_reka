@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <link rel = "shortcut icon" href = "Логотип для фавикона.png" type = "image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукция | Молочная река</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+</head>
+ 
+<body>
+    <ul class="menu">
+        <li><a href="potreb.html">Главная</a></li>
+        <li><a href="aboutCompany.html">О компании</a></li>
+        <li><a href="products.html" class="current">Вакансии</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <main>
+        <div class="container">
+            <div class="cards">
+                <h2 class="sectionTitle">Наши вакансии</h2>
+                <div class="sliderContainer">
+                    <div class="slider">
+                        <div class="slide">
+                            <div class="card">
+                                <img src="в текст1 (13).jpg" alt="">
+                                <h3>Зоотехник</h3>
+                                <span>От 40тыс руб</span>
+                                </div>>    
+                                <div class="card">
+                                <img src="unnamed.jpg" alt="">
+                                <h3>Оператор цеха машинного доения</h3>
+                                <span>от 35тыс руб</span>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="card">
+                                    <img src="istockphoto-521345139-170667a.jpg" alt="">
+                                    <h3>Вет. врач</h3>
+                                    <span>от 40 тыс руб</span>
+                                </div>
+                                <div class="card">
+                                    <img src="selhoz1.jpg" alt="">
+                                    <h3>Механизатор</h3>
+                                    <span>от 40тыс руб</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sliderButton">
+                        <a href="#/"><</a>
+                        <a href="#/">></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="contacts.html" class="ques">По всем вопросам сюда</a>
+    </main>
+    <script>
+        let  left = document.getElementsByClassName("sliderButton")[0].children[0]
+        let  right = document.getElementsByClassName("sliderButton")[0].children[1]
+        let dist = 0
+        let slider = document.getElementsByClassName("slider")[0]
+        right.onclick = function () {
+            console.log(1);
+            dist = dist+100;
+            if(dist == slider.children.length*100){
+                dist = 0
+            }
+            slider.style.transform = "translateX(-"+dist+"%)"
+        }
+        left.onclick = function () {
+            console.log(2);
+            dist = dist-100
+            if(dist == -100){
+                dist = (slider.children.length-1)*100
+            }
+            slider.style.transform = "translateX(-"+dist+"%)"
+        }
+        setInterval(function(){
+            // console.log(7);
+            dist = dist+100;
+            if (dist == slider.children.length*100){
+                dist = 0
+            }
+            slider.style.transform = "translateX(-"+dist+"%)"
+        },5700)
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.cards{
+    text-align: center;
+}
+body{
+    background-color: mintcream;
+}
+.card{
+    text-align: center;
+    /* width: calc(20% - 20px); */
+    width: 400px;
+    display: inline-block;
+    /* float: left; */
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 500px;
+    /* background-color: rgb(190, 92, 92); */
+    position: relative;
+}
+.card:hover img{
+    filter: blur(30px);
+}
+.card img{
+    object-fit: cover;
+    transition: 1s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    /* z-index: -1; */
+}
+.ques{
+    font-family: Jost;
+    color: darkgrey;
+    margin-left: 40%;
+    position: absolute;
+    font-size: 30px;
+    text-decoration: none;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 36%) 5px 10px 20px;
+    border-radius: 30px;
+    padding: 10px
+}
+.card h3{
+    white-space: normal;
+    width: 100%;
+    left: 0;
+    background-color: #0060aa;
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+    color: white;
+    display: inline-block;
+    bottom: 0;
+    position: absolute;
+    /* z-index: 99999999; */
+}
+.card span{
+    top: 20px;
+    right: -15px;
+    border-radius: 5px;
+    display: inline-block;
+    position: absolute;
+    background-color: #0060aa;
+    font-size: 20px;
+    line-height: 60px;
+    width: 140px;
+    font-family: 'Jost', sans-serif;
+    color: white;
+}
+/* .card p{
+    font-family: 'Jost', sans-serif ;
+    opacity: 0;
+    color: white;
+    padding: 10px;
+    top: 100px;
+    position: absolute;
+    transition: 1s;
+    white-space: normal;
+}
+.card:hover p{
+    opacity: 1;
+} */
+.sliderContainer{
+    margin-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.slider{
+    transition: 1s;
+    /* background: tomato; */
+    position: relative;
+    font-size: 0%;
+    white-space: nowrap;
+}
+.slide{
+    /* background: turquoise; */
+    width: 100%;
+    display: inline-block;
+}
+.sliderButton a{
+    margin-top: 120px;
+    width: 150px;
+    background: rgb(255, 255, 255);
+    color: darkgray;
+    text-decoration: none;
+    position: absolute;
+    float: right;
+    font-size: 70px;
+    left: 0%;
+    top: 43%;
+    border-radius: 16px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.356);
+}
+.sliderButton a:last-child{
+    margin-top: 120px;
+    left: auto;
+    right: 0;
+    position: absolute;
+    float: left;
+    top: 43%;
+}
+.sliderButton{
+    left: 5%;
+    height: 100%;
+    top: 0%;
+    width: 90%;
+    position: absolute;
+    /* background-color: rgba(255, 248, 220, 0.459); */
+    /* background-color: royalblue; */
+}
